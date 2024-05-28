@@ -5,39 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Font Awesome 6 -->
+    <!------------------------------------------------------ Favicon ----------------------------------------------------------------------->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+
+    <!------------------------------------------------------ Font Awesome 6 ---------------------------------------------------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <!-- Google fonts Poppins -->
+    <!------------------------------------------------------ Google fonts Poppins ---------------------------------------------------------->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
-    <!-- Estilo personalizado -->
+    <!------------------------------------------------------ Estilo personalizado ---------------------------------------------------------->
     <link rel="stylesheet" href="estilos.css">
 
-    <!-- Título do site -->
+    <!------------------------------------------------------ Título do site ---------------------------------------------------------------->
     <title>Jeferson Web dev Freelancer</title>
     
 </head>
 <body>
 
-    <!-- Header -->
+    <!------------------------------------------------------ Header ------------------------------------------------------------------------>
     <header> 
         <div class="header-body">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#Sobre">Sobre</a></li>
-                <li><a href="#Skills">Skills</a></li>
-                <li><a href="#Projetos">Projetos</a></li>
-                <li><a href="#">Home</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
 
             <a href="#">Contato</a>
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-------------------------------------------------------- Hero ------------------------------------------------------------------------->
     <section id="hero">
         <div class="hero-body">
             <div class="hero-text">
@@ -48,47 +52,47 @@
         </div>    
     </section>
 
-    <!-- Skills -->
+    <!-------------------------------------------------------- Skills ----------------------------------------------------------------------->
     <section id="skills">
         <h2>Skills</h2>
         <div class="skills-body">
             
             <div class="skills-icon">
-                <img src="./img/html 5.png" alt="">
+                <img src="./img/html 5.png" alt="icone-html">
             </div>
 
             <div class="skills-icon">
-                <img src="./img/css-3.png" alt="">
+                <img src="./img/css-3.png" alt="icone-css">
             </div>
 
             <div class="skills-icon">
-                <img src="./img/js.png" alt="">
+                <img src="./img/js.png" alt="icone-javascript">
             </div>
 
             <div class="skills-icon">
-                <img src="./img/php.png" alt="">
+                <img src="./img/php.png" alt="icone-php">
             </div>
 
             <div class="skills-icon">
-                <img src="./img/mysql-database.png" alt="">
+                <img src="./img/mysql-database.png" alt="icone-mysql">
             </div>
 
             <div class="skills-icon">
-                <img src="./img/github.png" alt="">
+                <img src="./img/github.png" alt="icone-github">
             </div>
 
             <div class="skills-icon">
-                <img src="./img/python.png" alt="">
+                <img src="./img/python.png" alt="icone-python">
             </div>
 
             <div class="skills-icon">
-                <img src="./img/php.png" alt="">
+                <img src="./img/wordpress.png" alt="icone-wordpress">
             </div>
 
         </div>
     </section>
 
-    <!-- Serviços -->
+    <!-------------------------------------------------------- Serviços ----------------------------------------------------------------------->
     <section id="servicos">
         <h2>Serviços</h2>
         <div class="servicos-body">
@@ -131,52 +135,82 @@
         </div>
     </section>
 
-    <!-- Projetos -->
+    <!-------------------------------------------------------- Projetos ----------------------------------------------------------------------->
     <section id="projetos">
         <h2>Projetos</h2>
         <div class="projetos-body">
             
             <div class="projetos-card">
                 <img src="./img/portfolio-01.jpg" alt="">
-                <a href="#">Site Institucional para uma Pequena Empresa</a>
-                <h4>Site informativo e responsivo para uma empresa local, destacando seus serviços, informações de contato e história da empresa.</h4>
+                <a href="#">Site Institucional</a>
+                <div class="flex">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Responsivo</span>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/portfolio-02.jpg" alt="">
-                <a href="#">Loja Online para um Negócio de E-Commerce</a>
-                <h4>Criar uma plataforma de comércio eletrônico personalizada usando WordPress, Shopify ou outra plataforma, incluindo recursos como catálogo de produtos, carrinho de compras, pagamento online seguro e integração com sistemas de entrega.</h4>
+                <a href="#">Loja Online (E-Commerce)</a>
+                <div class="flex">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Responsivo</span>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/portfolio-03.jpg" alt="">
                 <a href="#">Blog de Viagens</a>
-                <h4>Desenvolver um blog de viagens atraente e interativo, com belos designs e funcionalidades de compartilhamento social, permitindo que o proprietário do blog publique suas experiências de viagem, fotos e dicas.</h4>
+                <div class="flex">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Responsivo</span>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/portfolio-04.jpg" alt="">
-                <a href="#">Portfólio Online para um Fotógrafo ou Artista</a>
-                <h4>Criar um site de portfólio visualmente deslumbrante para exibir o trabalho de um fotógrafo, artista ou designer, com galerias de imagens, seções de biografia e formulários de contato.</h4>
+                <a href="#">Site Academia Workout</a>
+                <div class="flex">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Responsivo</span>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/portfolio-05.jpg" alt="">
-                <a href="#">Plataforma de Aprendizado Online (E-Learning)</a>
-                <h4>Desenvolver um sistema de gerenciamento de aprendizado (LMS) personalizado para uma instituição educacional ou um instrutor independente, incluindo recursos como registro de cursos, vídeos de aulas, quizzes interativos e certificados de conclusão.</h4>
+                <a href="#">Plataforma de Aprendizado Online</a>
+                <div class="flex">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Responsivo</span>
+                </div>
             </div>
 
             <div class="projetos-card">
                 <img src="./img/portfolio-06.jpg" alt="">
                 <a href="#">Rede Social Especializada</a>
-                <h4>Criar uma rede social centrada em um nicho específico, como comunidade de entusiastas de tecnologia, aficionados por comida ou amantes de livros, com recursos de perfil de usuário, feeds de notícias, grupos de discussão e sistema de mensagens privadas.</h4>
+                <div class="flex">
+                    <span class="badge">HTML</span>
+                    <span class="badge">CSS</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Responsivo</span>
+                </div>
             </div>
 
         </div>
 
     </section>
 
-    <!-- Contato -->
+    <!-------------------------------------------------------- Contato ----------------------------------------------------------------------->
     <section id="contato">
         <h2>Contato</h2>
         <div class="container">
@@ -204,9 +238,65 @@
         </div>
     </section>
 
-    <!-- Rodapé -->
+    <!-------------------------------------------------------- Rodapé ----------------------------------------------------------------------->
     <footer>
-    
+        
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <img src="./img/codigo.png" alt="">
+                <div>
+                    <h2>Jeferson Guimaraes</h2>
+                    <p>Web Dev Freelancer</p>
+                </div>
+            </div>
+            <div class="footer-menu">
+                
+                <ul>
+                    <h2>Institucional</h2>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <ul>
+                    <h2>Institucional</h2>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+
+                <ul>
+                    <h2>Sobre</h2>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Politica Pivacidade</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+
+                <div class="redes-sociais">
+                    <h2>Redes Sociais</h2>
+                    <ul class="flex">
+                        <li><a href="#hero"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#sobre"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a href="#skills"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="#servicos"><i class="fa-brands fa-square-facebook"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Todos os direitos reservados.</p>
+        </div>
+
     </footer>
 </body>
 </html>

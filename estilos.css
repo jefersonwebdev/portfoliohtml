@@ -8,6 +8,14 @@
     font-family: "Poppins";
 }
 
+.flex {
+    display: flex;
+}
+
+.border {
+    border: 1px solid red;
+}
+
 body {
     background-color: #fafafa;
 }
@@ -182,14 +190,99 @@ section h2 {
     text-decoration: none;
     color: #333;
     margin-bottom: 10px;
+    max-width: 250px;
 }
 
 .projetos-card h4 {
     margin-bottom: 22px;
 }
 
+.badge {
+    border: 1px solid #dbdbdb;
+    font-size: 12px;
+    padding: 2px 4px;
+    width: fit-content;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    color: #4c4c4c;
+    margin-right: 5px;
+}
+
 footer {
-    height: 500px;
+    padding: 20px;
+    height: fit-content;
+    background-color: #f2f2f2;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+    margin: 0 50px;
+    border: 1px solid transparent;
+
+}
+
+.footer-menu ul {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.footer-menu li {
+    padding: 8px;
+    width: fit-content;
+    border: 1px solid transparent;
+}
+
+.footer-menu a {
+    font-size: 16px;
+    font-weight: 400;
+    width: fit-content;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: top;
+    column-gap: 10px;
+    padding: 10px;
+}
+
+.footer-brand img {
+    height: 44px;
+    width: 44px;
+}
+
+.redes-sociais {
+    text-align: left;
+}
+
+.redes-sociais li {
+    border-radius: 100%;
+    background-color: #333;
+    margin: 5px;
+}
+
+.redes-sociais i {
+    font-size: 25px;
+    padding: 5px;
+    color: #fff;
+}
+
+.redes-sociais ul {
+    margin-left: 0;
+    margin-right: 50px;
 }
 
 /* Style inputs with type="text", select elements and textareas */
