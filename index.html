@@ -26,46 +26,50 @@
 <body>
 
     <!------------------------------------------------------ Header ------------------------------------------------------------------------>
-    <header class="flex"> 
-        <div class="footer-brand">
-            <img src="./img/codigo.png" alt="">
-            <div>
-                <h3>Jeferson Guimaraes</h3>
-                <p>Web Dev Freelancer</p>
+    <header>
+        <div class="header-container flex border center"> 
+            <div class="footer-brand">
+                <img src="./img/codigo.png" alt="">
+                <div>
+                    <h3>Jeferson Guimaraes</h3>
+                    <p>Web Dev Freelancer</p>
+                </div>
             </div>
-        </div>
-        <div class="header-body flex">
-            <ul class="flex">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+            <div class="header-body flex">
+                <ul class="flex">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
 
-            <!-- <a class="header-cta" href="#">Contato</a> -->
-        </div>
-        <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
+                <!-- <a class="header-cta" href="#">Contato</a> -->
+            </div>
+            <!-- <i class="fa-sharp fa-solid fa-bars"></i> -->
+        </div>  
     </header>
 
-    <!-------------------------------------------------------- Hero ------------------------------------------------------------------------->
+    <!-- Hero -->
     <section id="hero">
-        <div class="hero-body">
-            <div class="hero-text">
-                <h1>Hi, I’m Jone Lee Software Engineer.</h1>
-                <p>I'm the Front-End Developer for #Company in Bangladesh, OR. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+        <div class="hero-body border">
+            <div class="hero-text border">
+                <h1>VENDA MUITO MAIS ATRAVÉS DA INTERNET</h1>
+                <p>Com um site bonito, responsivo e otimizado!</p>
+                <a class="btn-cta" href="#">Solicitar Orçamento</a>
             </div>    
-            <div class="hero-img">
+            <div class="hero-img border">
                 <img src="./img/person-front-computer-working-html.jpg" alt="">
             </div>
         </div>    
 
     </section>
 
+    <!-- SOBRE -->
     <section id="sobre">
         <h2>Sobre</h2>
-        <div class="text-sobre">
+        <div class="text-sobre border">
             <p>Sou Jeferson Guimaraes, um apaixonado desenvolvedor web com uma abordagem criativa e orientada a soluções. Com uma sólida formação em desenvolvimento de software e uma paixão por tecnologia, estou constantemente buscando aprender e me aprimorar no meu ofício.</p>
             <p>Minha jornada no mundo da programação começou 1 ano atrás, e desde então tenho trabalhado em uma variedade de projetos desafiadores que me permitiram aprimorar minhas habilidades em diversas áreas, incluindo desenvolvimento front-end, back-end, e-commerce e otimização de desempenho.</p>
             <p>Acredito firmemente na importância da colaboração e da comunicação eficaz para o sucesso de qualquer projeto. Estou sempre pronto para colaborar com equipes multidisciplinares e transformar ideias inovadoras em realidade digital.</p>
@@ -78,7 +82,7 @@
     <!-------------------------------------------------------- Skills ----------------------------------------------------------------------->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skills-body">
+        <div class="skills-body border">
             
             <div class="skills-icon">
                 <img src="./img/html 5.png" alt="icone-html">
@@ -164,9 +168,11 @@
         <div class="projetos-body border">
             
             <div class="projetos-card">
-                <img src="./img/portfolio-01.jpg" alt="">
-                <a href="#">Site Institucional</a>
-                <div class="flex">
+                <div class="img-div">
+                    <img src="./img/portfolio-01.jpg" alt="">
+                </div>
+                    <a href="#">Site Institucional</a>
+                <div class="flex center">
                     <span class="badge">HTML</span>
                     <span class="badge">CSS</span>
                     <span class="badge">JavaScript</span>
@@ -175,9 +181,11 @@
             </div>
 
             <div class="projetos-card">
-                <img src="./img/portfolio-02.jpg" alt="">
+                <div class="img-div">
+                    <img src="./img/portfolio-02.jpg" alt="">
+                </div>
                 <a href="#">Delivery</a>
-                <div class="flex">
+                <div class="flex center">
                     <span class="badge">HTML</span>
                     <span class="badge">CSS</span>
                     <span class="badge">JavaScript</span>
@@ -186,9 +194,11 @@
             </div>
 
             <div class="projetos-card">
-                <img src="./img/portfolio-03.jpg" alt="">
+                <div class="img-div">
+                    <img src="./img/portfolio-03.jpg" alt="">
+                </div>
                 <a href="#">Blog de Viagens</a>
-                <div class="flex">
+                <div class="flex center">
                     <span class="badge">HTML</span>
                     <span class="badge">CSS</span>
                     <span class="badge">JavaScript</span>
@@ -197,9 +207,11 @@
             </div>
 
             <div class="projetos-card">
-                <img src="./img/portfolio-04.jpg" alt="">
-                <a href="#">Site Academia Workout</a>
-                <div class="flex">
+                <div class="img-div">
+                    <img src="./img/portfolio-04.jpg" alt="">
+                </div>
+                    <a href="#">Site Academia Workout</a>
+                <div class="flex center">
                     <span class="badge">HTML</span>
                     <span class="badge">CSS</span>
                     <span class="badge">JavaScript</span>
@@ -208,9 +220,11 @@
             </div>
 
             <div class="projetos-card">
-                <img src="./img/portfolio-05.jpg" alt="">
+                <div class="img-div">
+                    <img src="./img/portfolio-05.jpg" alt="">
+                </div>
                 <a href="#">Plataforma EAD</a>
-                <div class="flex">
+                <div class="flex center">
                     <span class="badge">HTML</span>
                     <span class="badge">CSS</span>
                     <span class="badge">JavaScript</span>
@@ -219,9 +233,11 @@
             </div>
 
             <div class="projetos-card">
-                <img src="./img/portfolio-06.jpg" alt="">
+                <div class="img-div">
+                    <img src="./img/portfolio-06.jpg" alt="">
+                </div>
                 <a href="#">E-commerce</a>
-                <div class="flex">
+                <div class="flex center">
                     <span class="badge">HTML</span>
                     <span class="badge">CSS</span>
                     <span class="badge">JavaScript</span>
@@ -266,25 +282,17 @@
         
         <div class="footer-container">
 
-            <div class="footer-brand">
-                <img src="./img/codigo.png" alt="">
-                <div>
-                    <h2>Jeferson Guimaraes</h2>
-                    <p>Web Dev Freelancer</p>
-                </div>
-            </div>
+            
 
             <div class="footer-menu">
                 
-                <ul>
-                    <h2>Institucional</h2>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
+                <div class="footer-brand">
+                    <img src="./img/codigo.png" alt="">
+                    <div>
+                        <h2>Jeferson Guimaraes</h2>
+                        <p>Web Dev Freelancer</p>
+                    </div>
+                </div>
 
                 <ul>
                     <h2>Institucional</h2>

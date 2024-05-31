@@ -41,6 +41,10 @@ p {
     flex-wrap: wrap;
 }
 
+.center {
+    justify-content: center;
+}
+
 .border {
     border: 1px solid var(--Red);
 }
@@ -58,6 +62,7 @@ h4 {
 
 header {
     position: fixed;
+    z-index: 1;
     width: 100%;
     top:0;
     padding: 20px;
@@ -67,6 +72,16 @@ header {
     /*box-shadow: var(--Sombra-Branca);*/
     /*box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;*/
     justify-content: space-between;
+}
+
+.header-container {
+    justify-content: space-between;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1140px;
+    height: fit-content;
+    margin: 0 auto;
 }
 
 .header-body {
@@ -113,55 +128,60 @@ header ul li a::after:hover {
     width: 50%;
 }
 
-.header-cta {
+.btn-cta {
     height: 44px;
     min-width: 120px;
+    max-width: fit-content;    
     padding: 10px 25px;
-    border-radius: 5px;
+    border-radius: 30px;
     display: block;
     color: white;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
-    background-color: var(--Blue);
+    background-color: var(--Purple);
     align-self: flex-start;
     justify-content: center;
+    transition: all 0.5s;
 }
 
-.header-cta:hover {
-    background-color: #0095E8;
+.btn-cta:hover {
+    background-color: #5b2ebc;
     color: white;
+    transform: scale(1.2);
 }
 
 #hero p {
     font-size: 18px;
-    max-width: max-content;
+    margin-bottom: 10px;
 }
 
 #hero h1 {
     font-size: 32px;
     line-height: 40px;
-    max-width: max-content ;
     margin-bottom: 10px;
 }
 
+.hero-text {
+    margin: 10px;
+    max-width: 40%;
+    height: auto;
+}
 .hero-body {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    max-width: 1140px;
 }
 
 .hero-body img {
     height: auto;
-    max-width: 100%;
-    
-    margin: 10px;
+    max-width: 100%;  
 }
 
 .hero-img {
+    
     max-width: 50%;
-
     /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./img/person-front-computer-working-html.jpg");
     height: 50%;
 
@@ -170,11 +190,6 @@ header ul li a::after:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;*/
-}
-
-.hero-text {
-    margin: 10px;
-    max-width: 40%;
 }
 
 section {
@@ -193,6 +208,11 @@ section h2 {
     font-size: 40px;
 }
 
+.text-sobre {
+    max-width: 1140px;
+    padding: 20px;
+}
+
 .text-sobre p {
     font-size: 16px;
     margin-bottom: 10px;
@@ -203,6 +223,7 @@ section h2 {
     border-top: 1px solid var(--Border-Light);
     border-bottom: 1px solid var(--Border-Light);
     padding: 100px 0;
+    min-height: 850px;
 }
 
 .skills-body {
@@ -210,6 +231,7 @@ section h2 {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 320px;
+    height: fit-content;
 }
 
 .skills-icon {
@@ -226,9 +248,15 @@ section h2 {
     background-color: #fff;
     box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
     margin: 10px;
+    transition: all 0.5s;
+}
+
+.skills-icon:hover {
+    transform: scale(1.2);
 }
 
 .skills-icon img {
+    position: relative;
     height: 44px;
     width: 44px;
 }
@@ -238,7 +266,6 @@ section h2 {
     flex-wrap: wrap;
     max-width: 1140px;
     height: fit-content;
-    border: transparent solid 1px;
     justify-content: center;
 }
 
@@ -288,8 +315,23 @@ section h2 {
     flex-wrap: wrap;
     max-width: 1140px;
     height: fit-content;
-    border: transparent solid 1px;
     justify-content: center;
+}
+
+.img-div {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.img-div img {
+    width: 100%;
+    transition: all 0.5s;
+    display: block;
+}
+
+.img-div img:hover {
+    transform: scale(1.2) rotate(12deg);
 }
 
 .projetos-card {
@@ -305,11 +347,16 @@ section h2 {
     justify-content: center;
 }
 
-.projetos-card img {
-
+/*.projetos-card img {
     border-radius: 20px;
     margin-bottom: 10px;
+    transition: all 0.5s;
+    display: block;
 }
+
+.projetos-card img:hover {
+    transform: scale(1.2) rotate(12deg);
+}*/
 
 .projetos-card a {
     font-size: 22px;
@@ -317,7 +364,7 @@ section h2 {
     text-decoration: none;
     color: var(--Gray-Dark);
     margin-bottom: 10px;
-    max-width: 250px;
+
 }
 
 .projetos-card h3 {
@@ -348,6 +395,8 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 .footer-menu {
@@ -382,6 +431,7 @@ footer {
 .footer-bottom {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -411,6 +461,7 @@ footer {
 
 .redes-sociais ul li a:hover {
     background-color: var(--Gray-Dark-Hover);
+    transform: scale(1.2);
 }
 
 .redes-sociais i {
@@ -457,6 +508,7 @@ input[type=text], select, textarea {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    max-width: 1140px;
   }
 
 @media (max-width:850px)  {
