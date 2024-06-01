@@ -19,6 +19,7 @@
     --Sombra: 0 4px 8px 0 rgba(0,0,0,0.2);
     --Sombra-Hover: 0 8px 16px 0 rgba(0,0,0,0.2);
     --Sombra-Branca: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+    --Max-Width: 1140px
 }
 
 * {
@@ -46,7 +47,7 @@ p {
 }
 
 .border {
-    border: 1px solid var(--Red);
+    border: 1px solid transparent;
 }
 
 body {
@@ -67,11 +68,16 @@ header {
     top:0;
     padding: 20px;
     min-height: 60px;
-    background-color: var(--Background-Light);
-    border-bottom: 1px solid var(--Border-Light); 
+    background-color: transparent;
+    /*background-color: var(--Background-Light);*/
+    border-bottom: 1px solid transparent; 
     /*box-shadow: var(--Sombra-Branca);*/
     /*box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;*/
     justify-content: space-between;
+}
+
+header h3, p {
+    color: #fff;
 }
 
 .header-container {
@@ -105,7 +111,8 @@ header a {
     display: block;
     position: relative;
     border-radius: 5px;
-    color: var(--Font-color-default);
+    color: #fff;
+   
 }
 
 header a:hover {
@@ -126,6 +133,23 @@ header ul li a::after {
 header ul li a::after:hover {
     left: 25%;
     width: 50%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px;
+    height: fit-content;
+    text-align: left;
+    margin: 0;
+    min-height: 100vh;
+}
+
+section h2 {
+    margin-bottom: 48px;
+    font-size: 40px;
 }
 
 .btn-cta {
@@ -150,28 +174,40 @@ header ul li a::after:hover {
     transform: scale(1.2);
 }
 
+#hero {
+    margin-top: 0px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-tech.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+
 #hero p {
+    color: white;
     font-size: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 48px;
 }
 
 #hero h1 {
+    color: white;
     font-size: 32px;
     line-height: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 48px;
 }
 
 .hero-text {
-    margin: 10px;
-    max-width: 40%;
+    margin: 0;
+    max-width: 50%;
     height: auto;
+    padding: 20px;
 }
 .hero-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    max-width: 1140px;
+    max-width: 1200px;
+    height: auto;
 }
 
 .hero-body img {
@@ -192,22 +228,6 @@ header ul li a::after:hover {
     position: relative;*/
 }
 
-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    height: fit-content;
-    text-align: left;
-    margin: 100px 0;
-}
-
-section h2 {
-    margin-bottom: 10px;
-    font-size: 40px;
-}
-
 .text-sobre {
     max-width: 1140px;
     padding: 20px;
@@ -223,7 +243,7 @@ section h2 {
     border-top: 1px solid var(--Border-Light);
     border-bottom: 1px solid var(--Border-Light);
     padding: 100px 0;
-    min-height: 850px;
+   
 }
 
 .skills-body {
@@ -264,7 +284,7 @@ section h2 {
 .servicos-body {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1140px;
+    max-width: var(--Max-Width);
     height: fit-content;
     justify-content: center;
 }
@@ -313,7 +333,7 @@ section h2 {
 .projetos-body {
     display: flex;
     flex-wrap: wrap;
-    max-width: 1140px;
+    max-width: var(--Max-Width);
     height: fit-content;
     justify-content: center;
 }
@@ -395,7 +415,7 @@ footer {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    max-width: 1140px;
+    max-width: var(--Max-Width);
     margin: 0 auto;
 }
 
@@ -506,7 +526,6 @@ input[type=text], select, textarea {
   /* Add a background color and some padding around the form */
   .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
     padding: 20px;
     max-width: 1140px;
   }
@@ -525,9 +544,13 @@ input[type=text], select, textarea {
         background-color: #dbdbdb;
         width: 50%;
     }*/
+
+    #hero {
+        max-width: 100vw;
+    }
 }
 
-@media (min-width:851px) {
+@media screen and (min-width:851px) {
     header i {
         display: none;
     }
@@ -545,6 +568,10 @@ input[type=text], select, textarea {
 
     .projetos-card img {
         width: 100%;
+    }
+
+    #hero {
+        max-width: 100vw;
     }
 }
 
@@ -571,6 +598,10 @@ input[type=text], select, textarea {
 
     .header-body img {
         max-width: 100%;
+    }
+
+    #hero {
+        max-width: 100vw;
     }
 
     #hero h1, p {

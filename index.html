@@ -26,7 +26,7 @@
 <body>
 
     <!------------------------------------------------------ Header ------------------------------------------------------------------------>
-    <header>
+    <header id="header">
         <div class="header-container flex border center"> 
             <div class="footer-brand">
                 <img src="./img/codigo.png" alt="">
@@ -65,7 +65,7 @@
         </div>    
 
     </section>
-
+  
     <!-- SOBRE -->
     <section id="sobre">
         <h2>Sobre</h2>
@@ -256,20 +256,20 @@
             <form action="action_page.php">
         
             <label for="fname">Nome</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
         
-            <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="lname">Sobrenome</label>
+            <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
         
-            <label for="country">Country</label>
+            <label for="country">Serviço</label>
             <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
+                <option value="australia">Landing page</option>
+                <option value="canada">Blog</option>
+                <option value="usa">E-commerce</option>
             </select>
         
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for="subject">Mensagem</label>
+            <textarea id="subject" name="subject" placeholder="Escreva algo.." style="height:200px"></textarea>
         
             <input type="submit" value="Submit">
         
@@ -330,5 +330,43 @@
         </div>
 
     </footer>
+    
+<script>
+    window.addEventListener('scroll', function() {
+  var header = document.getElementById('header');
+  var position = window.scrollY;
+
+  if (position > 200) {
+    header.style.backgroundColor = '#f6f8fa';
+    header.style.color = '#333'; // Altera a cor da fonte para branco
+    header.style.borderColor = '#d0d7de'; // Altera a cor da borda para branco
+    changeElementColor('h3', '#333'); // Altera a cor dos elementos h3 para branco
+    changeElementColor('p', '#333'); // Altera a cor dos elementos p para branco
+    changeLinkColor('#333'); // Altera a cor dos links para branco
+  } else {
+    header.style.backgroundColor = 'transparent';
+    header.style.color = '#fff'; // Retorna a cor da fonte para preto
+    header.style.borderColor = 'transparent'; // Altera a cor da borda para branco
+    changeElementColor('h3', '#fff'); // Retorna a cor dos elementos h3 para preto
+    changeElementColor('p', '#fff'); // Retorna a cor dos elementos p para preto
+    changeLinkColor('#fff'); // Retorna a cor dos links para preto
+  }
+});
+
+function changeElementColor(tagName, color) {
+  var elements = document.querySelectorAll('#header ' + tagName);
+  elements.forEach(function(element) {
+    element.style.color = color;
+  });
+}
+
+function changeLinkColor(color) {
+  var links = document.querySelectorAll('#header a');
+  links.forEach(function(link) {
+    link.style.color = color;
+  });
+}
+</script>
+
 </body>
 </html>
