@@ -68,16 +68,16 @@ header {
     top:0;
     padding: 20px;
     min-height: 60px;
-    background-color: transparent;
+    background-color: var(--Background-Light);
     /*background-color: var(--Background-Light);*/
-    border-bottom: 1px solid transparent; 
+    border-bottom: 1px solid var(--Border-Light); 
     /*box-shadow: var(--Sombra-Branca);*/
     /*box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;*/
     justify-content: space-between;
 }
 
 header h3, p {
-    color: #fff;
+    color: var(--Font-color-default);
 }
 
 .header-container {
@@ -111,7 +111,7 @@ header a {
     display: block;
     position: relative;
     border-radius: 5px;
-    color: #fff;
+    color: var(--Font-color-default);
    
 }
 
@@ -236,6 +236,7 @@ section h2 {
 .text-sobre p {
     font-size: 16px;
     margin-bottom: 10px;
+    color: var(--Gray-Dark);
 }
 
 #skills {
@@ -321,6 +322,7 @@ section h2 {
     font-size: 16px;
     margin-bottom: 22px;
     line-height: 28px;
+    color: var(--Gray-Dark);
 }
 
 #projetos {
@@ -411,6 +413,10 @@ footer {
     border-top: 1px solid var(--Border-Light);
 }
 
+.footer p {
+    color: var(--Gray-Dark);
+}
+
 .footer-container {
     display: flex;
     flex-wrap: nowrap;
@@ -477,11 +483,13 @@ footer {
     border-radius: 100%;
     background-color: var(--Gray-Dark);
     margin: 5px;
+    padding: 4px 8px;
 }
 
 .redes-sociais ul li a:hover {
     background-color: var(--Gray-Dark-Hover);
     transform: scale(1.2);
+    transition: all 300ms ease-in-out;
 }
 
 .redes-sociais i {
@@ -500,7 +508,7 @@ input[type=text], select, textarea {
     width: 100%; /* Full width */
     height: 44px;
     padding: 12px; /* Some padding */ 
-    border: 1px solid #E4E6EF; /* Gray border */
+    border: 1px solid var(--Border-Light);/* Gray border */
     border-radius: 5px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
@@ -529,6 +537,23 @@ input[type=text], select, textarea {
     padding: 20px;
     max-width: 1140px;
   }
+
+  .elemento {
+    opacity: 0;
+  }
+
+  .fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.visible.fade-up {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  
 
 @media (max-width:850px)  {
     .header-body {
@@ -612,3 +637,19 @@ input[type=text], select, textarea {
         max-width: 100%;
     }
 }
+
+/* @keyframes slidein {
+    from {
+      margin-left:  60%;
+      width:  30%;
+    }
+  
+    to {
+      margin-left:  0%;
+      width:  30%;
+    }
+  }
+  
+  .projetos-card {
+    animation: slidein  3s;
+  } */

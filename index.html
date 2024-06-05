@@ -22,6 +22,105 @@
     <!------------------------------------------------------ Título do site ---------------------------------------------------------------->
     <title>Jeferson Web dev Freelancer</title>
     
+
+    <style>
+        .uianimated { /* top */
+          position: relative;
+          transform: translateY(60px);
+          opacity: 0;
+          transition: all 1.2s ease;
+        }
+            
+        .uianimated.bottom {
+          transform: translateY(-60px);
+        }
+            
+        .uianimated.left {
+          transform: translateY(0px);
+          transform: translateX(60px);
+        }
+            
+        .uianimated.right {
+          transform: translateY(0px);
+          transform: translateX(-60px);
+        }
+            
+        .uianimated.active {
+          transform: translateY(0px);
+          transform: translateX(0px);
+          opacity: 1;
+        }
+            
+        .uianimated.active.delay-100 {
+            -webkit-transition-delay: 100ms;
+            -moz-transition-delay: 100ms;
+            -o-transition-delay: 100ms;
+            transition-delay: 100ms;
+        }
+            
+        .uianimated.active.delay-200 {
+            -webkit-transition-delay: 200ms;
+            -moz-transition-delay: 200ms;
+            -o-transition-delay: 200ms;
+            transition-delay: 200ms;
+        }
+        
+        .uianimated.active.delay-300 {
+            -webkit-transition-delay: 300ms;
+            -moz-transition-delay: 300ms;
+            -o-transition-delay: 300ms;
+            transition-delay: 300ms;
+        }
+            
+        .uianimated.active.delay-400 {
+            -webkit-transition-delay: 400ms;
+            -moz-transition-delay: 400ms;
+            -o-transition-delay: 400ms;
+            transition-delay: 400ms;
+        }
+        
+        .uianimated.active.delay-500 {
+            -webkit-transition-delay: 500ms;
+            -moz-transition-delay: 500ms;
+            -o-transition-delay: 500ms;
+            transition-delay: 500ms;
+        }
+            
+        .uianimated.active.delay-600 {
+            -webkit-transition-delay: 600ms;
+            -moz-transition-delay: 600ms;
+            -o-transition-delay: 600ms;
+            transition-delay: 600ms;
+        }
+            
+        .uianimated.active.delay-700 {
+            -webkit-transition-delay: 700ms;
+            -moz-transition-delay: 700ms;
+            -o-transition-delay: 700ms;
+            transition-delay: 700ms;
+        }
+            
+        .uianimated.active.delay-800 {
+            -webkit-transition-delay: 800ms;
+            -moz-transition-delay: 800ms;
+            -o-transition-delay: 800ms;
+            transition-delay: 800ms;
+        }
+            
+        .uianimated.active.delay-900 {
+            -webkit-transition-delay: 900ms;
+            -moz-transition-delay: 900ms;
+            -o-transition-delay: 900ms;
+            transition-delay: 900ms;
+        }
+            
+        .uianimated.active.delay-1000 {
+            -webkit-transition-delay: 1000ms;
+            -moz-transition-delay: 1000ms;
+            -o-transition-delay: 1000ms;
+            transition-delay: 1000ms;
+        }
+        </style>
 </head>
 <body>
 
@@ -54,12 +153,12 @@
     <!-- Hero -->
     <section id="hero">
         <div class="hero-body border">
-            <div class="hero-text border">
+            <div class="hero-text border uianimated right delay-400">
                 <h1>VENDA MUITO MAIS ATRAVÉS DA INTERNET</h1>
                 <p>Com um site bonito, responsivo e otimizado!</p>
                 <a class="btn-cta" href="#">Solicitar Orçamento</a>
             </div>    
-            <div class="hero-img border">
+            <div class="hero-img border uianimated left delay-400">
                 <img src="./img/person-front-computer-working-html.jpg" alt="">
             </div>
         </div>    
@@ -68,8 +167,8 @@
   
     <!-- SOBRE -->
     <section id="sobre">
-        <h2>Sobre</h2>
-        <div class="text-sobre border">
+        <h2 class="uianimated delay-400">Sobre</h2>
+        <div class="text-sobre border uianimated delay-600">
             <p>Sou Jeferson Guimaraes, um apaixonado desenvolvedor web com uma abordagem criativa e orientada a soluções. Com uma sólida formação em desenvolvimento de software e uma paixão por tecnologia, estou constantemente buscando aprender e me aprimorar no meu ofício.</p>
             <p>Minha jornada no mundo da programação começou 1 ano atrás, e desde então tenho trabalhado em uma variedade de projetos desafiadores que me permitiram aprimorar minhas habilidades em diversas áreas, incluindo desenvolvimento front-end, back-end, e-commerce e otimização de desempenho.</p>
             <p>Acredito firmemente na importância da colaboração e da comunicação eficaz para o sucesso de qualquer projeto. Estou sempre pronto para colaborar com equipes multidisciplinares e transformar ideias inovadoras em realidade digital.</p>
@@ -81,38 +180,38 @@
 
     <!-------------------------------------------------------- Skills ----------------------------------------------------------------------->
     <section id="skills">
-        <h2>Skills</h2>
+        <h2 class="uianimated">Skills</h2>
         <div class="skills-body border">
             
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/html 5.png" alt="icone-html">
             </div>
 
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/css-3.png" alt="icone-css">
             </div>
 
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/js.png" alt="icone-javascript">
             </div>
 
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/php.png" alt="icone-php">
             </div>
 
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/mysql-database.png" alt="icone-mysql">
             </div>
 
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/github.png" alt="icone-github">
             </div>
 
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/python.png" alt="icone-python">
             </div>
 
-            <div class="skills-icon">
+            <div class="skills-icon uianimated">
                 <img src="./img/wordpress.png" alt="icone-wordpress">
             </div>
 
@@ -121,39 +220,39 @@
 
     <!-------------------------------------------------------- Serviços ----------------------------------------------------------------------->
     <section id="servicos">
-        <h2>Serviços</h2>
+        <h2 class="uianimated">Serviços</h2>
         <div class="servicos-body border">
-            <div class="servicos-card">
+            <div class="servicos-card uianimated">
                 <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
                 <h3>Desenvolvimento de Websites Responsivos</h3>
                 <p>Sites que se adaptam automaticamente a diferentes dispositivos e tamanhos de tela.</p>
             </div>
             
-            <div class="servicos-card">
+            <div class="servicos-card uianimated">
                 <i class="fa-solid fa-cart-shopping"></i>
                 <h3>Desenvolvimento de E-commerce</h3>
                 <p>Lojas virtuais e plataformas de comércio eletrônico, incluindo recursos como carrinho de compras, processamento de pagamentos online.</p>
             </div>
 
-            <div class="servicos-card">
+            <div class="servicos-card uianimated">
                 <i class="fa-solid fa-screwdriver-wrench"></i>
                 <h3>Manutenção e Suporte</h3>
                 <p>Suporte técnico para seu website ou aplicativo web permaneça funcional, seguro e atualizado com as melhores práticas da indústria.</p>
             </div>
 
-            <div class="servicos-card">
+            <div class="servicos-card uianimated">
                 <i class="fa-solid fa-database"></i>
                 <h3>Desenvolvimento de Aplicações Web</h3>
                 <p>Personalização de aplicativos para atender às necessidades específicas do cliente, utilizando tecnologias como HTML, CSS, JavaScript.</p>
             </div>
 
-            <div class="servicos-card">
+            <div class="servicos-card uianimated">
                 <i class="fa-solid fa-gauge-high"></i>
                 <h4>Otimização de Desempenho</h4>
                 <p>Identificação e implementação de melhorias para aumentar a velocidade e eficiência de um website ou aplicativo web.</p>
             </div>
 
-            <div class="servicos-card">
+            <div class="servicos-card uianimated">
                 <i class="fa-solid fa-code-branch"></i>
                 <h4>Integração de APIs</h4>
                 <p>Conexão de diferentes sistemas e serviços através de APIs, permitindo a troca de dados e funcionalidades entre plataformas distintas.</p>
@@ -164,10 +263,10 @@
 
     <!-------------------------------------------------------- Projetos ----------------------------------------------------------------------->
     <section id="projetos">
-        <h2>Projetos</h2>
+        <h2 class="uianimated">Projetos</h2>
         <div class="projetos-body border">
             
-            <div class="projetos-card">
+            <div class="projetos-card uianimated">
                 <div class="img-div">
                     <img src="./img/portfolio-01.jpg" alt="">
                 </div>
@@ -180,7 +279,7 @@
                 </div>
             </div>
 
-            <div class="projetos-card">
+            <div class="projetos-card uianimated">
                 <div class="img-div">
                     <img src="./img/portfolio-02.jpg" alt="">
                 </div>
@@ -193,7 +292,7 @@
                 </div>
             </div>
 
-            <div class="projetos-card">
+            <div class="projetos-card uianimated">
                 <div class="img-div">
                     <img src="./img/portfolio-03.jpg" alt="">
                 </div>
@@ -206,7 +305,7 @@
                 </div>
             </div>
 
-            <div class="projetos-card">
+            <div class="projetos-card uianimated">
                 <div class="img-div">
                     <img src="./img/portfolio-04.jpg" alt="">
                 </div>
@@ -219,7 +318,7 @@
                 </div>
             </div>
 
-            <div class="projetos-card">
+            <div class="projetos-card uianimated">
                 <div class="img-div">
                     <img src="./img/portfolio-05.jpg" alt="">
                 </div>
@@ -232,7 +331,7 @@
                 </div>
             </div>
 
-            <div class="projetos-card">
+            <div class="projetos-card uianimated delay-200">
                 <div class="img-div">
                     <img src="./img/portfolio-06.jpg" alt="">
                 </div>
@@ -251,8 +350,8 @@
 
     <!-------------------------------------------------------- Contato ----------------------------------------------------------------------->
     <section id="contato">
-        <h2>Contato</h2>
-        <div class="container">
+        <h2 class="uianimated">Contato</h2>
+        <div class="container uianimated">
             <form action="action_page.php">
         
             <label for="fname">Nome</label>
@@ -331,7 +430,7 @@
 
     </footer>
     
-<script>
+<!-- <script>
     window.addEventListener('scroll', function() {
   var header = document.getElementById('header');
   var position = window.scrollY;
@@ -341,14 +440,14 @@
     header.style.color = '#333'; // Altera a cor da fonte para branco
     header.style.borderColor = '#d0d7de'; // Altera a cor da borda para branco
     changeElementColor('h3', '#333'); // Altera a cor dos elementos h3 para branco
-    changeElementColor('p', '#333'); // Altera a cor dos elementos p para branco
+    changeElementColor('#header + p', '#333'); // Altera a cor dos elementos p para branco
     changeLinkColor('#333'); // Altera a cor dos links para branco
   } else {
     header.style.backgroundColor = 'transparent';
     header.style.color = '#fff'; // Retorna a cor da fonte para preto
     header.style.borderColor = 'transparent'; // Altera a cor da borda para branco
     changeElementColor('h3', '#fff'); // Retorna a cor dos elementos h3 para preto
-    changeElementColor('p', '#fff'); // Retorna a cor dos elementos p para preto
+    changeElementColor('#header p', '#fff'); // Retorna a cor dos elementos p para preto
     changeLinkColor('#fff'); // Retorna a cor dos links para preto
   }
 });
@@ -366,7 +465,34 @@ function changeLinkColor(color) {
     link.style.color = color;
   });
 }
-</script>
+</script> -->
 
+<script>
+function uianimated() {
+  var uianimateds = document.querySelectorAll('.uianimated');
+
+  for (var i = 0; i < uianimateds.length; i++) {
+    var windowheight = window.innerHeight;
+    var uianimatedtop = uianimateds[i].getBoundingClientRect().top;
+    var uianimatedpoint = 40;
+
+    if (uianimatedtop < windowheight - uianimatedpoint) {
+      uianimateds[i].classList.add('active');
+    } else {
+      uianimateds[i].classList.remove('active');
+    }
+  }
+}
+
+function onPageload() {
+  uianimated();
+  window.addEventListener('scroll', uianimated);
+}
+
+window.addEventListener('load', onPageload);
+
+
+
+</script>
 </body>
 </html>
