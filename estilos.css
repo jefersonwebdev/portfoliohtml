@@ -175,7 +175,7 @@ section h2 {
 }
 
 #hero {
-    margin-top: 0px;
+    margin-top: 80px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./img/bg-tech.jpg);
     background-position: center;
     background-size: cover;
@@ -299,6 +299,7 @@ section h2 {
     background-color: var(--Background-Light);
     border: 1px solid var(--Border-Light);
     margin: 10px;
+    transition: all 1.2s ease;
 }
 
 .servicos-card i {
@@ -309,13 +310,23 @@ section h2 {
     margin-bottom: 10px;
 }
 
-.servicos-card:hover {
-    background-color: var(--Background-Menu-Hover);
+.servicos-card img {
+    height: 44px;
+    width: 44px;
+    margin: 0 auto;
+    margin-bottom: 24px;
 }
 
-.servicos-card h4 {
+.servicos-card:hover {
+    background-color: var(--Background-Menu-Hover);
+    cursor: pointer;
+}
+
+.servicos-card h3 {
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .servicos-card p {
@@ -323,6 +334,7 @@ section h2 {
     margin-bottom: 22px;
     line-height: 28px;
     color: var(--Gray-Dark);
+    text-align: center;
 }
 
 #projetos {
@@ -489,7 +501,7 @@ footer {
 .redes-sociais ul li a:hover {
     background-color: var(--Gray-Dark-Hover);
     transform: scale(1.2);
-    transition: all 300ms ease-in-out;
+    transition: all 0.5s;
 }
 
 .redes-sociais i {
@@ -518,7 +530,7 @@ input[type=text], select, textarea {
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: var(--Purple);
     color: white;
     padding: 12px 20px;
     border: none;
@@ -528,7 +540,7 @@ input[type=text], select, textarea {
   
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #b298ff;
   }
   
   /* Add a background color and some padding around the form */
