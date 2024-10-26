@@ -15,7 +15,10 @@ Rápida descrição do objetivo de fazer esse projeto
 ![](https://jefersonwebdev.github.io/portfoliohtml/img/portfolio_header.png#vitrinedev)
 ## Detalhes do projeto
 
-Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc...
+![](https://jefersonwebdev.github.io/portfoliohtml/img/portfolio_mockup.png#vitrinedev)
+# Responsivo
+Se adapta ao tamanho da tela do dispositivo em que está sendo visualizado, como um celular, tablet ou desktop
+<!-- Textos e imagens que descrevam seu projeto, suas conquistas, seus desafios, próximos passos, etc... -->
 
 # PORTFOLIO
 
