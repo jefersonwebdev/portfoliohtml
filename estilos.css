@@ -1,3 +1,6 @@
+@import url(./css/animacoes.css);
+@import url(./css/responsividade.css);
+
 :root {
     --Blue: #009EF7;
     --Green: #50CD89;
@@ -19,7 +22,8 @@
     --Sombra: 0 4px 8px 0 rgba(0,0,0,0.2);
     --Sombra-Hover: 0 8px 16px 0 rgba(0,0,0,0.2);
     --Sombra-Branca: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
-    --Max-Width: 1140px
+    --Max-Width: 1140px;
+    --font-size-p: 1rem;
 }
 
 * {
@@ -31,10 +35,11 @@
     list-style: none;
     font-family: "Poppins";
     scroll-behavior: smooth;
+    font-size: var(--font-size-p);
 }
 
 p {
-   font-size: 14px;
+   font-size: var(--font-size-p);
 }
 
 .flex {
@@ -638,7 +643,7 @@ input[type=text], select, textarea {
     }
 
     #hero {
-        max-width: 100vw;
+        max-width: 100%;
     }
 
     #hero h1, p {
@@ -649,6 +654,7 @@ input[type=text], select, textarea {
         max-width: 100%;
     }
 }
+
 
 /* @keyframes slidein {
     from {
